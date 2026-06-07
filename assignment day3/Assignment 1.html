@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Registration Form for the Global Tech Conference 2026. Register now to secure your spot at the biggest tech event of the year!" />
+    <meta name="keywords" content="Registration Form, Global Tech Conference, 2026, Tech Event, Conference Registration" />
+    <meta name="author" content="Rohit Jain" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+
+      </nav>
+      <h2>Global Tech Conference 2026 Registration</h2>
+      <p>Register now for the biggest tech conference of the year!</p>
+    </header>
+    <main>
+      <aside>
+        <h2>Conference Preview</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Jb-Idy5eOns?si=AttQU-9EGRis6bcx"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </aside>
+      <aside>
+        <h2>Conference Theme Song</h2>
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </aside>
+      <section>
+      <form action="/register" method="POST">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label><br />
+          <input type="text" name="fullname" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" name="email" required /><br /><br />
+
+          <label for="telephone">Telephone:</label><br />
+          <input type="tel" name="telephone" required /><br /><br />
+
+          <label for="address">Address:</label><br />
+          <textarea name="address" rows="4" cols="50" required></textarea
+          ><br /><br />
+
+          <label for="gender">Gender:</label><br />
+          <input type="radio" name="gender" value="male" required /> Male
+          <input type="radio" name="gender" value="   female" required />
+          Female<br />
+          <label for="workshop">Workshop:</label><br />
+          <input type="checkbox" name="workshop" value="workshop1" /> Workshop 1
+          <input type="checkbox" name="workshop" value="workshop2" /> Workshop
+          2<br /><br />
+        </fieldset>
+    </section>
+    <section>
+        <fieldset>
+          <legend>Conference Details</legend>
+          <label for="Ticket Type">Ticket Type:</label><br />
+          <select name="ticketType" required>
+            <option value="">Select Ticket Type</option>
+            <option value="standard">Standard</option>
+            <option value="vip">VIP</option>
+            <option value="student">Student</option></select
+          ><br /><br />
+
+          <label for="Areas of Interest">Areas of Interest:</label><br />
+          <input type="checkbox" name="interest" value="ai" /> Artificial
+          Intelligence
+          <input type="checkbox" name="interest" value="webdev" /> Web
+          Development
+          <input type="checkbox" name="interest" value="datascience" /> Data
+          Science
+          <input type="checkbox" name="interest" value="cybersecurity" />
+          Cybersecurity<br /><br />
+
+          <label for="upload resume">Upload Resume:</label><br />
+          <input
+            type="file"
+            name="resume"
+            accept=".pdf,.doc,.docx"
+            required
+          /><br /><br />
+        </fieldset>
+        </section>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2026 Global Tech Conference. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
